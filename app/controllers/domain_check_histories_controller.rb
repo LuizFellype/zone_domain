@@ -1,5 +1,5 @@
 class DomainCheckHistoriesController < ApplicationController
-	def index
+  def index
     respond_to do |format|
       format.html { render :index }
       format.json { render json: DomainCheckHistoryDatatable.new(params) }
