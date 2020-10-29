@@ -1,0 +1,2 @@
+module AvailableDomainsHelper
+end

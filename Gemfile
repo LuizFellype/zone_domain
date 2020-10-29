@@ -3,14 +3,16 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
-ruby '2.3.4'
-gem 'rails', '~> 5.0.7', '>= 5.0.7.2'
+ruby '2.4.2'
+gem 'rails', '~> 5.1.2', '>= 5.1.2'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
+gem 'ajax-datatables-rails'
+
 group :development, :test do
   gem 'byebug', platform: :mri
 end

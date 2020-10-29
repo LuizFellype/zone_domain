@@ -1,0 +1,8 @@
+.actions.text-right.mb-2
+  = link_to 'Back', '/', class: 'btn btn-light'
+
+%table#available-domains-datatable.table.table-bordered{data: { history_id: params[:id] }}
+  %thead
+    %tr
+      %th Name
+  %tbody

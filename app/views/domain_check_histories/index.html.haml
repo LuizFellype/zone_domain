@@ -1,0 +1,14 @@
+.actions.text-right.mb-2
+  = link_to 'New', new_domain_check_history_path, class: 'btn btn-primary'
+
+%table#history-datatable.table.table-bordered
+  %thead
+    %tr
+      %th Pattern
+      %th Extension
+      %th Starts With
+      %th Omit
+      %th Created At
+      %th Status
+      %th
+  %tbody

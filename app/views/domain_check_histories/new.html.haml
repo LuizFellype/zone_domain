@@ -1,0 +1,22 @@
+= form_with scope: :domain_check_history, url: domain_check_histories_path do |f|
+  .form-row.form-group
+    .col-sm-6
+      = f.label :pattern, class: ''
+      = f.text_field :pattern, class: 'form-control', placeholder: 'CVCV', required: true
+    .col-sm-6
+      = f.label :extension, class: ''
+      .input-group
+        .input-group-prepend
+          .input-group-text .
+        = f.text_field :extension, class: 'form-control', placeholder: 'com'
+  .form-row.form-group
+    .col-sm-6
+      = f.label :starts_with, class: ''
+      = f.text_field :starts_with, class: 'form-control'
+    .col-sm-6
+      = f.label :omit, class: ''
+      = f.text_field :omit, class: 'form-control'
+  %br/
+  .d-flex.justify-content-between
+    = f.submit 'Submit', class: 'btn btn-primary'
+    = link_to 'Back', '/', class: 'btn btn-light'
